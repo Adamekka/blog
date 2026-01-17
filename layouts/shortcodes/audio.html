@@ -1,0 +1,21 @@
+{{- $src := .Get "src" -}}
+{{- $title := .Get "title" -}}
+{{- $preload := default "none" (.Get "preload") -}}
+{{- $autoplay := .Get "autoplay" -}}
+{{- $loop := .Get "loop" -}}
+{{- $muted := .Get "muted" -}}
+
+{{- if not $src -}}
+<strong>audio shortcode error: missing "src"</strong>
+{{- else -}}
+{{- if $title -}}
+<p><strong>{{ $title }}</strong></p>
+{{- end -}}
+
+<audio controls preload="{{ $preload }}" {{ if $autoplay }}autoplay{{ end }} {{ if $loop }}loop{{ end }} {{ if $muted
+    }}muted{{ end }}>
+    <source src="{{ $src }}" type="{{ cond (strings.HasSuffix $src " .mp3") "audio/mpeg" (cond (strings.HasSuffix
+        $src ".ogg" ) "audio/ogg" "audio/wav" ) }}">
+    Your browser does not support the audio element.
+</audio>
+{{- end -}}
