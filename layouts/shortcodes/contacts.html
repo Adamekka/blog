@@ -1,0 +1,9 @@
+{{ with try (resources.GetRemote "https://raw.githubusercontent.com/Adamekka/contacts/main/contacts.md") }}
+{{ with .Err }}
+{{ errorf "Failed to fetch contacts: %s" . }}
+{{ else with .Value }}
+{{ .Content | markdownify }}
+{{ else }}
+{{ errorf "Unable to fetch contacts: empty response" }}
+{{ end }}
+{{ end }}
