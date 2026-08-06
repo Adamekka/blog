@@ -41,4 +41,5 @@ That's how I do things.
 All you had to do was remove distractions.
 So think about your next move: is it going to be Counter-Strike, Instagram, or your IDE?
 
-Here you go. Now you can **BUILD SHIT**.
+Here you go.
+Now you can **BUILD SHIT**.

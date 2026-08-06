@@ -27,14 +27,18 @@ Here's an example of what you can do in a week:
 
 {{< audio src="fourth-noise.wav" >}}
 
-It's my fourth song. Notice how it's simple - just an electric guitar lead and drums. That's enough to have fun and learn.
+It's my fourth song.
+Notice how it's simple - just an electric guitar lead and drums.
+That's enough to have fun and learn.
 
-High expectations are a recurring problem for me while learning. But the fun actually lies in learning the principles, not in the finished ultimate song or software.
+High expectations are a recurring problem for me while learning.
+But the fun actually lies in learning the principles, not in the finished ultimate song or software.
 
 **It's important to have fun in the process, not in the result.**
 
 I learned other skills too.
-I used to suck at writing stories, so I wrote one. It was 6 months ago and it's here: [TheBook](https://adamekka.itch.io).
+I used to suck at writing stories, so I wrote one.
+It was 6 months ago and it's here: [TheBook](https://adamekka.itch.io).
 
 If you're going to read it, it's very random.
 I learned the concepts while writing it, and I dislike rewriting finished projects, so you can literally see improvements while you read.
@@ -73,7 +77,8 @@ Learning is fun but it's also hard, and it's easy to burn out when you have the 
 I often see people wanting to learn or make something, then somehow failing before even the "Hello World!" equivalent of their idea.
 I wonder how they can fail that early, but I bet it's the expectations and stepping into the unknown for the first time.
 
-Learning is also a skill you have to learn. This article is basically my experience with learning and self development.
+Learning is also a skill you have to learn.
+This article is basically my experience with learning and self development.
 
 If you keep learning and building, you basically can't lose long-term.
 

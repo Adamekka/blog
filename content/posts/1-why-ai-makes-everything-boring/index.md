@@ -3,7 +3,8 @@ title = "Why AI Makes Everything Boring"
 date = "2026-01-16T03:13:34+01:00"
 +++
 
-I remember in 2022 when OpenAI released GPT-3.5. It was a really interesting model at the time, and we didn't know what consequences of AI we'd be dealing with today.
+I remember in 2022 when OpenAI released GPT-3.5.
+It was a really interesting model at the time, and we didn't know what consequences of AI we'd be dealing with today.
 I used it mostly for annoying school stuff like writing protocols.
 But for programming it wasn't great, because all it could really do was write a simple function or a small algorithm.
 
