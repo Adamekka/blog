@@ -3,3 +3,8 @@
   --foreground: #f8f8f2;
   --accent: #8be9fd;
 }
+
+img {
+  border: 0;
+  padding: 0;
+}

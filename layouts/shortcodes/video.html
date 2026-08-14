@@ -1,23 +1,27 @@
 {{- $src := .Get "src" -}}
 {{- $title := .Get "title" -}}
+{{- $poster := .Get "poster" -}}
+{{- $width := .Get "width" -}}
+{{- $height := .Get "height" -}}
 {{- $preload := default "none" (.Get "preload") -}}
 {{- $autoplay := .Get "autoplay" -}}
 {{- $loop := .Get "loop" -}}
 {{- $muted := .Get "muted" -}}
 
 {{- if not $src -}}
-<strong>audio shortcode error: missing "src"</strong>
+<strong>video shortcode error: missing "src"</strong>
 {{- else -}}
 {{- if $title -}}
 <p><strong>{{ $title }}</strong></p>
 {{- end -}}
 
-<audio controls preload="{{ $preload }}"
+<video controls preload="{{ $preload }}" src="{{ $src }}"
+    {{- with $poster }} poster="{{ . }}"{{ end }}
+    {{- with $width }} width="{{ . }}"{{ end }}
+    {{- with $height }} height="{{ . }}"{{ end }}
     {{- if $autoplay }} autoplay{{ end }}
     {{- if $loop }} loop{{ end }}
     {{- if $muted }} muted{{ end }}>
-    <source src="{{ $src }}"
-        type="{{ cond (strings.HasSuffix $src ".mp3") "audio/mpeg" (cond (strings.HasSuffix $src ".ogg") "audio/ogg" "audio/wav") }}">
-    Your browser does not support the audio element.
-</audio>
+    Your browser does not support the video element.
+</video>
 {{- end -}}

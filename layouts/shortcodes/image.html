@@ -1,0 +1,14 @@
+{{- $src := .Get "src" -}}
+{{- $alt := default "" (.Get "alt") -}}
+{{- $title := .Get "title" -}}
+{{- $width := .Get "width" -}}
+{{- $height := .Get "height" -}}
+
+{{- if not $src -}}
+<strong>image shortcode error: missing "src"</strong>
+{{- else -}}
+<img src="{{ $src }}" alt="{{ $alt }}" loading="eager"
+    {{- with $title }} title="{{ . }}"{{ end }}
+    {{- with $width }} width="{{ . }}"{{ end }}
+    {{- with $height }} height="{{ . }}"{{ end }}>
+{{- end -}}
